@@ -3,6 +3,7 @@
 .flutter-plugins
 .packages
 build/
+.last_build_id
 *.iml
 
 # Android
