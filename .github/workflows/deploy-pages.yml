@@ -1,5 +1,5 @@
 # Compila la app Flutter web y la publica en GitHub Pages.
-# En el repo: Settings → Pages → Source = "GitHub Actions" (no "Deploy from a branch").
+# IMPORTANTE: Settings → Pages → Source = "GitHub Actions".
 name: Build and deploy to GitHub Pages
 
 on:
@@ -28,7 +28,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: "3.24.0"
+          flutter-version: "3.22.0"
           channel: "stable"
           cache: true
 
@@ -36,7 +36,10 @@ jobs:
         run: flutter pub get
 
       - name: Build web
-        run: flutter build web --base-href "/Agenda_semanal_TS/"
+        run: flutter build web --base-href "/Agenda_semanal_TS/" --release
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
