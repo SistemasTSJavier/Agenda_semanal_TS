@@ -29,3 +29,4 @@ calendario_app/web/.dart_tool/
 
 # Config con claves (opcional: no subir si pones la key aquí)
 # lib/config/supabase_config.dart
+.env.github
