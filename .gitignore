@@ -1,0 +1,31 @@
+# Flutter
+.dart_tool/
+.flutter-plugins
+.packages
+build/
+*.iml
+
+# Android
+android/.gradle
+android/local.properties
+android/app/debug
+android/app/profile
+android/app/release
+*.jks
+
+# iOS
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+
+# Web
+calendario_app/web/.dart_tool/
+
+# IDE
+.idea/
+*.swp
+*.swo
+
+# Config con claves (opcional: no subir si pones la key aquí)
+# lib/config/supabase_config.dart
